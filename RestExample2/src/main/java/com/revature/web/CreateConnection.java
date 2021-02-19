@@ -7,7 +7,7 @@ public class CreateConnection {
 	static {
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost/bankapp", "postgres", "zZmmB0054");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost/bankapp", "postgres", "password");
 		}catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
