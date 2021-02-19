@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Revature Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light justify-content" style="background-color: #e3f2fd;">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block">
+                <!-- hidden spacer to center brand on mobile -->
+            </span>
+
+        </div>
+        <div class="navbar-nav flex-grow-1 text-right" id="myNavbar7">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="welcome.html" class="nav-link">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron" id="welcomeContainer">
+    </div>
+    <script>
+        var welcomeSection = document.getElementById("welcomeContainer");
+        var welcomeMessage = document.createElement("h1");
+        welcomeMessage.innerHTML = "Account Number " + sessionStorage.getItem("accountNumber");
+
+        welcomeSection.appendChild(welcomeMessage);
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-auto">
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="viewBalance">View Balance</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="deposit">Deposit</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="withdraw">Withdraw</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="viewPosted">View Posted Transfers</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="viewIncoming">View Incoming Transfers</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="postTransfer">Post a Transfer</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="acceptTransfer">Accept a Transfer</button>
+                    <button type="button" class="btn btn-primary btn-lg" role="button" id="rejectTransfer">Reject a Transfer</button>
+                </div>
+            </div>
+            <div class="col-6" id="contentContainer">
+            </div>
+            <div id="contentContainer2">
+            </div>
+        </div>
+    </div>
+    <script src="accountPage.js"></script>
+
+</body>
+
+</html>

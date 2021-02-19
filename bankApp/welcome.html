@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revature Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    h1 {text-align: center;}
+    .btn-block {
+    padding: 2%; 
+    /* define values in pixels / Percentage or em. whatever suits 
+       your requirements */
+    }
+    </style>
+</head>
+<body>
+    <script>
+        sessionStorage.clear();
+    </script>
+    <div class="jumbotron">
+        <h1>Welcome to Revature Bank!</h1>
+      </div>
+    <div class="container">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary btn-block btn-large" role="button" id="loginButton"><h3>Log In</h3></button>
+            <button type="button" class="btn btn-primary btn-block btn-large" role="button" id="registerButton"><h3>Register</h3></button>
+        </div>
+    </div>
+</br></br></br>
+<script src="formChange.js"></script>
+    <div class="container" id="formChange">
+        <!--
+            <div class="form-group">
+              <label for="uname">Username:</label>
+              <input type="text" class="form-control" placeholder="Enter username" id="uname">
+            </br>
+              
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </br>
+              
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    -->
+        
+    </div>
+    <div class = "container" id="showStatus">
+    </div>
+</body>
+</html>
